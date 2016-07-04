@@ -321,7 +321,7 @@ def main(ms=""):
 	while True:
 		welcome()
 		talwin("Do You Want Install Open Source Driver Or Closed Source Driver?\n","blue")
-		print("1-Install Nouveau Open Source Driver.\t\t\t\t\t\t 2-Install Nvidia Closed Source Driver.\n\n\n3-Level 1 Troubleshoot Nvidia Closed Source Driver\t\t\t\t 4-Level 2 Troubleshoot Nvidia Closed Source Driver\n\n\n5-Undo Level 2 Troubleshoot Nvidia Closed Source Driver.\t\t\t 6-Troubleshoot Nouveau Open Source Driver\n\n\n7-Remove Nouveau Open Source Driver.                                            8-Remove Nvidia CLosed Source Driver.\n\n\n9-Remove All Driver.                                                            10-Install Gnome Shell Extentios.")
+		print("1-Install Nouveau Open Source Driver.\t\t\t\t\t\t 2-Install Nvidia Closed Source Driver.\n\n\n3-Level 1 Troubleshoot Nvidia Closed Source Driver\t\t\t\t 4-Level 2 Troubleshoot Nvidia Closed Source Driver\n\n\n5-Undo Level 2 Troubleshoot Nvidia Closed Source Driver.\t\t\t 6-Troubleshoot Nouveau Open Source Driver\n\n\n7-Remove Nouveau Open Source Driver.                                             8-Remove Nvidia CLosed Source Driver.\n\n\n9-Remove All Driver.                                                             10-Install Gnome Shell Extentios.")
 		talwin("\n%s\n"%ms,"red")
 		talwin("Choice Number || q to Exit.\n-","blue",end="")
 		answer=input().strip()
