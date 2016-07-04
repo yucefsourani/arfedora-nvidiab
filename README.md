@@ -14,4 +14,4 @@
 
  * ``` sudo chmod 755 ~/arfedora-nvidiab/arfedora-nvidiab.py ```
 
- * ``` ~/arfedora-nvidiab/arfedora-nvidiab.py ``
+ * ``` ~/arfedora-nvidiab/arfedora-nvidiab.py ```
