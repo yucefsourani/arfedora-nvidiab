@@ -1,5 +1,5 @@
 # arfedora-nvidiab
-* Script To Install Bumblebee + Nvidia Or Nouveau On Fedora.
+* Script To Install Bumblebee + Nvidia Or Nouveau On Fedora 23/24.
 * http://www.arfedora.com
 
 
