@@ -68,7 +68,7 @@ def check_vga_supported():
 			count2+=1
 
 	if count1!=2 and count2!=2:
-		sys.exit("VGA NOT SUPPORTED.")
+		return main("VGA NOT SUPPORTED.")
 
 
 
