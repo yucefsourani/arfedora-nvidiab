@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#  arfedora_nvidiab.py
+#  arfedora-nvidiab.py
 #
 #  Copyright 2016 youcef sourani <youcef.m.sourani@gmail.com>
 #
@@ -45,7 +45,7 @@ def init_check():
 		sys.exit("Fedora Not Found.")
 		
 	if not sys.version.startswith("3"):
-		sys.exit("Use Python 3 Try run python3 nvidia_install.py")
+		sys.exit("Use Python 3 Try run python3 arfedora-nvidiab.py")
 		
 	if  platform.linux_distribution()[1]!="23" and platform.linux_distribution()[1]!="24":
 		sys.exit("Fedora 23 || Fedora 24 Not Found.")
@@ -307,12 +307,12 @@ def msg(m):
 		print()
 		talwin (m,"red")
 		talwin("\nY To Continue || N To Back || Q To Quit : \n-","blue",end="")
-		y_n=input()
-		if y_n.strip()=="Y" or y_n.strip()=="y":
+		y_n=input().strip()
+		if y_n=="Y" or y_n.strip()=="y":
 			break
-		elif y_n.strip()=="N" or y_n.strip()=="n":
+		elif y_n=="N" or y_n.strip()=="n":
 			return main()
-		elif y_n.strip()=="q" or y_n.strip()=="Q":
+		elif y_n=="q" or y_n.strip()=="Q":
 			sys.exit("\nBye...\n")
 			
 def main(ms=""):
@@ -326,7 +326,7 @@ def main(ms=""):
 		talwin("Choice Number || q to Exit.\n-","blue",end="")
 		answer=input().strip()
 		ms=""
-		if answer.strip()=="1":
+		if answer=="1":
 			msg("Remove Nvidia Closed Source Driver || Install Nouveau Open Source Driver.")
 			nouveau()
 			return main("Finish Reboot Your Machine.")
@@ -373,7 +373,7 @@ def main(ms=""):
 			gnome_extensions()
 			return main("Finish Reboot Your Machine.")
 			
-		elif answer.strip()=="q" or answer.strip()=="Q":
+		elif answer=="q" or answer.strip()=="Q":
 			sys.exit("\nBye...\n")
 		
 	
