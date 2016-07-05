@@ -308,11 +308,11 @@ def msg(m):
 		talwin (m,"red")
 		talwin("\nY To Continue || N To Back || Q To Quit : \n-","blue",end="")
 		y_n=input().strip()
-		if y_n=="Y" or y_n.strip()=="y":
+		if y_n=="Y" or y_n=="y":
 			break
-		elif y_n=="N" or y_n.strip()=="n":
+		elif y_n=="N" or y_n=="n":
 			return main()
-		elif y_n=="q" or y_n.strip()=="Q":
+		elif y_n=="q" or y_n=="Q":
 			sys.exit("\nBye...\n")
 			
 def main(ms=""):
@@ -373,7 +373,7 @@ def main(ms=""):
 			gnome_extensions()
 			return main("Finish Reboot Your Machine.")
 			
-		elif answer=="q" or answer.strip()=="Q":
+		elif answer=="q" or answer=="Q":
 			sys.exit("\nBye...\n")
 		
 	
