@@ -222,14 +222,12 @@ def nvidia():
 	
 
 def remove_nvidia():
-	check=subprocess.call("sudo dnf -y remove bumblebee-nvidia bbswitch-dkms  bumblebee primus --setopt clean_requirements_on_remove=false",shell=True)
-	if check!=0:
-		return main("Remove Error.")
+	subprocess.call("sudo dnf -y remove bumblebee-nvidia bbswitch-dkms  bumblebee primus --setopt clean_requirements_on_remove=false",shell=True)
+
 		
 def remove_nouveau():
-	check=subprocess.call("sudo dnf -y remove bumblebee-nouveau bbswitch-dkms bumblebee  --setopt clean_requirements_on_remove=false",shell=True)
-	if check!=0:
-		return main("Remove Error.")
+	subprocess.call("sudo dnf -y remove bumblebee-nouveau bbswitch-dkms bumblebee  --setopt clean_requirements_on_remove=false",shell=True)
+
 		
 def troubleshoot_nvidia_1():
 	install_kernel_devel()
